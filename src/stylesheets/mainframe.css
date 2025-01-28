@@ -1,0 +1,256 @@
+﻿:root{
+    --orange-transparent: rgba(255, 162, 13, 0.25);
+    --orange-highlight: #FFA20D;
+}
+
+.germania-one-regular {
+    font-family: "Germania One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title  {
+    transition: opacity 5s;
+    margin-bottom: 25px;
+}
+
+#content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    align-items: flex-end;
+}
+
+#last-name{
+    font-size: 10rem;
+    color: var(--orange-transparent);
+    -webkit-text-fill-color: var(--orange-transparent); /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px var(--orange-highlight);
+    vertical-align: bottom;
+    line-height: 7rem;
+}
+
+#first-name{
+    font-size: 5rem;
+    color: var(--orange-transparent);
+    -webkit-text-fill-color: var(--orange-transparent); /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px var(--orange-highlight);
+    vertical-align: bottom;
+    line-height: 3.5rem;
+}
+
+#corner-1{
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    translate: -0% 100%;
+}
+
+#corner-2{
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    translate: -100% 0%;
+}
+
+#corner-3{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+
+.opaque{
+    opacity: 1;
+}
+
+.transparent{
+    opacity: 0;
+}
+
+#title-resume{
+    margin: 15px 5px;
+    background-color: rgba(0, 33, 77, 0.4);
+    border-radius: 5px;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+}
+
+.victor-mono-thin {
+    font-family: "Victor Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.victor-mono-light {
+    font-family: "Victor Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.victor-mono-regular {
+    font-family: "Victor Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title-resume-text {
+    color: #6D8BA7;
+    font-size: 0.9rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+.title-resume-quote {
+    color: #C9E0F5;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+hl-txt{
+    color: #FBD575;
+}
+
+#title-resume{
+    padding: 10px 20px;
+    align-self: center;
+    position: relative;
+}
+
+#main-title-name-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+@media (max-width: 1250px) {
+    #last-name {
+        font-size: 8rem;
+        line-height: 5.6rem;
+    }
+
+    #fist-name {
+        font-size: 3rem;
+        line-height: 2.1rem;
+    }
+
+    #corner-1{
+        width: 100%;
+    }
+
+    #corner-2{
+        width: 10%;
+    }
+}
+
+#dashed-bar-left{
+    position: absolute;
+    left: 15px;
+    top: 50vh;
+}
+
+#dashed-bar-right{
+    position: absolute;
+    right: 15px;
+    top: 50vh;
+}
+
+#portfolio-button{
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+    bottom: 25px;
+    transition: opacity 5s;
+}
+
+#portfolio-cross{
+    position: relative;
+}
+
+#cross-left{
+    position: absolute;
+    bottom: 0px;
+    left: -2px;
+    transform: translate(-100%, 0%);
+}
+
+#cross-right{
+    position: absolute;
+    bottom: 70px;
+    left: 2px;
+}
+
+#cross-button{
+    display: flex;
+    position: absolute;
+    padding-right: 5px;
+    font-size: 2rem;
+    background-color: rgba(13, 42, 77, 0.25);
+    color: #476E9F;
+    bottom: 200px;
+    left: -25px;
+    translate: -100% 0%;
+    height: 45px;
+    width: 200px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#cross-button::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    height: 45px;
+    width: 10px;
+    background-color: rgba(0, 115, 255, 0.5);
+}
+
+#cross-button::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 50%;
+    width: 0px;
+    height: 1px;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: rgb(0, 115, 255);
+}
+
+#cross-button:hover{
+    color: rgb(0, 115, 255);
+}
+
+#cross-button:hover::after{
+    background-color: rgb(0, 115, 255);
+}
+
+#cross-button:hover::before{
+    opacity: 1;
+    left: -25px;
+    width: 50px;
+}
+
+.letter {
+    display: inline-block;
+    line-height: 2rem;
+}

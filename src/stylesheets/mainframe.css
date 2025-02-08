@@ -79,7 +79,7 @@
 
 #title-resume{
     margin: 15px 5px;
-    background-color: rgba(0, 33, 77, 0.4);
+    background-color: var(--blue-900-80);
     border-radius: 5px;
 }
 

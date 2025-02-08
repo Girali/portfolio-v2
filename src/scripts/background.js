@@ -73,6 +73,8 @@ const handleOnClickTitle = index => {
 
         const backgroundWrapper = document.getElementById("background");
         backgroundWrapper.classList.add("overlay-no-pointer-events");
+
+        window.InitGalaxy();
     }
 }
 
@@ -116,4 +118,3 @@ const createSparks = () => {
 
 window.onresize = () => createGrid();
 createGrid();
-createSparks();

@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/background.css"/>
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/mainframe.css"/>
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/portfolio.css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Victor+Mono:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <div id="container-galaxy"></div>
+        <script type="module" src="src/galaxy/galaxy.js"></script>
+        <div id="background-blur" style="display: none"></div>
+        <div id="background-mask" ></div>
+        <div id="tiles"></div>
+        <p id="start-text" class="victor-mono-light opaque">[ PRESS TO START ]</p>
+    </div>
+    <script src="src/scripts/background.js"></script>
+    <div id="content">
+        <div id="title" class="transparent">
+            <div id="main-title" class="germania-one-regular">
+                <div id="main-title-name-container">
+                    <div id="last-name">MARKOWSKI</div>
+                    <div id="first-name">oskar</div>
+                </div>
+                <img src="src/corner-1.png" id="corner-1" class="overlay-no-pointer-events">
+                <img src="src/corner-2.png" id="corner-2" class="overlay-no-pointer-events">
+            </div>
+            <div id="title-resume">
+                <p class="title-resume-text victor-mono-light">I’m MARKOWSKI Oskar a Developer with a <hl-txt>Professional License Diploma in Computer Science</hl-txt>, specialized in project management and with a <hl-txt>Master degree in Art</hl-txt>.</p>
+                <p class="title-resume-text victor-mono-light">I’m <hl-txt>polyvalent</hl-txt>, and I do like the artistic side of Computer Science, that's why I chose the <hl-txt>Technical Artist</hl-txt> position as an employ and Indie <hl-txt>Game Dev</hl-txt> in free time.</p>
+                <p class="title-resume-text victor-mono-light">And to close this presentation I do like to share a quote from Kamina:</p>
+                <p class="title-resume-quote victor-mono-regular">"Never believe in yourself. Neither believe in someone else. Believe in you who believe in yourself"</p>
+                <p class="title-resume-text victor-mono-light">It means that no matter what, always aim towards the best of what you can be.</p>
+                <img src="src/corner-3.png" id="corner-3" class="overlay-no-pointer-events">
+            </div>
+            <img src="src/dashed_bar.png" id="dashed-bar-left" class="overlay-no-pointer-events"/>
+            <img src="src/dashed_bar.png" id="dashed-bar-right" class="overlay-no-pointer-events"/>
+        </div>
+        <div id="portfolio-button" class="transparent">
+            <div id="portfolio-cross">
+                <img src="src/cross_left.png" id="cross-left" class="overlay-no-pointer-events"/>
+                <img src="src/cross_right.png" id="cross-right" class="overlay-no-pointer-events"/>
+                <div id="cross-button">
+                    <div id="cross-button-text" class="victor-mono-thin">CONNECT</div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="transparent overlay-no-pointer-events">
+            <div id="portfolio-zone">
+                <div id="portfolio-zone-tech" class="portfolio-zone">
+                    <div class="active disabled">
+
+                    </div>
+                    <div class="preview enabled">
+                        <div class="portfolio-card-upper-part">
+                            <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">TECH</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview">Learn more</div>
+                        </div>
+                        <div class="portfolio-card-lower-part">
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">3D ENGINES</p>
+                            </div>
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">NETWORKING</p>
+                            </div>
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">GAME DEV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapsed disabled">
+                        <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">TECH</div>
+                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed">Learn more</div>
+                    </div>
+                    <img src="src/tech-corner.png" id="portfolio-tech-corner-left">
+                    <img src="src/tech-corner.png" id="portfolio-tech-corner-right">
+                </div>
+                <div id="portfolio-zone-art" class="portfolio-zone">
+                    <div class="active disabled">
+
+                    </div>
+                    <div class="preview enabled">
+                        <div class="portfolio-card-upper-part">
+                            <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">ART</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview">Read more</div>
+                        </div>
+                        <div class="portfolio-card-lower-part">
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">shaders</p>
+                            </div>
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">3d art</p>
+                            </div>
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">2d art</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapsed disabled">
+                        <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">ART</div>
+                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed">Read more</div>
+                    </div>
+                    <img src="src/art-corner.png" id="portfolio-art-corner">
+                </div>
+                <div id="portfolio-zone-ui" class="portfolio-zone">
+                    <div class="active disabled">
+
+                    </div>
+                    <div class="preview enabled">
+                        <div class="portfolio-card-upper-part">
+                            <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">UI-UX</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview">See more</div>
+                        </div>
+                        <div class="portfolio-card-lower-part">
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">tools & tooling</p>
+                            </div>
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">branding</p>
+                            </div>
+                            <div class="portfolio-img portfolio-img-card">
+                                <img src="src/dummy.png"/>
+                                <p class="portfolio-img-card-title germania-one-regular">game ui & ux</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapsed disabled">
+                        <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">UI-UX</div>
+                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed">See more</div>
+                    </div>
+                    <img src="src/ui-corner.png" id="portfolio-ui-corner-left">
+                    <img src="src/ui-corner.png" id="portfolio-ui-corner-right">
+                </div>
+            </div>
+            <script src="src/scripts/portfolio-card.js"></script>
+        </div>
+    </div>
+    <script src="src/scripts/mainframe.js"></script>
+</body>
+</html>

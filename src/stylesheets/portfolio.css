@@ -1,6 +1,6 @@
 ﻿
 :root{
-    --blue-900-80: rgba(0, 20, 43, 0.5);
+    --blue-900-80: rgba(0, 20, 43, 0.8);
     --blue-900: rgba(0, 20, 43);
     --blue-600: #234064;
     --blue-200: #476E9F;
@@ -29,11 +29,9 @@
 
 .portfolio-zone{
     position: relative;
-    background-color: var(--blue-800-70);
+    background-color: var(--blue-900-80);
     padding: 20px 10px 10px 10px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     margin-top: 25px;
 }
 
@@ -150,7 +148,14 @@
     line-height: 5.6rem;
     text-transform: uppercase;
     vertical-align: bottom;
+}
+
+.portfolio-title-preview{
     margin-left: 5px;
+}
+
+.portfolio-button-preview{
+    margin-right: 15px;
 }
 
 .portfolio-zone-button{
@@ -164,7 +169,6 @@
     text-align: right;
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-right: 15px;
 }
 
 .portfolio-zone-button:before {
@@ -223,4 +227,21 @@
     transform: translate(-50%, 50%);
     bottom: 0px;
     left: 50%;
+}
+
+.enabled{
+    display: flex;
+}
+
+.disabled{
+    display: none;
+}
+
+.preview{
+    position: relative;
+    flex-direction: column;
+}
+
+.portfolio-button-collapsed{
+    bottom: 0;
 }

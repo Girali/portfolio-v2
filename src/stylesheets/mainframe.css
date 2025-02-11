@@ -1,6 +1,7 @@
 ﻿:root{
     --orange-transparent: rgba(255, 162, 13, 0.25);
     --orange-highlight: #FFA20D;
+    --orange-highlight-50: rgba(255, 162, 13, 0.5);
 }
 
 .germania-one-regular {
@@ -253,4 +254,132 @@ hl-txt{
 .letter {
     display: inline-block;
     line-height: 2rem;
+}
+
+#galaxy-controller{
+    background-color: var(--blue-900-50);
+    padding: 30px;
+    border-radius: 30px;
+    transition: opacity 1s ease;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    --a-color: var(--orange-highlight);
+}
+
+#set-default-btn{
+    --aa-color: var(--orange-highlight);
+    --aa-50-color: var(--orange-highlight-50);
+}
+
+#set-tech-btn{
+    --aa-color: var(--tech-a);
+    --aa-50-color: var(--tech-a-50);
+}
+
+#set-art-btn{
+    --aa-color: var(--art-a);
+    --aa-50-color: var(--art-a-50);
+}
+
+#set-ui-btn{
+    --aa-color: var(--ui-a);
+    --aa-50-color: var(--ui-a-50);
+}
+
+.galaxy-controller-button{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: transparent;
+    appearance: none;
+}
+
+.galaxy-controller-button:checked {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: var(--aa-50-color);
+    appearance: none;
+}
+
+.galaxy-controller-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 77px;
+    width: 77px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--a-color);
+}
+
+.galaxy-controller-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 3px;
+    background-color: var(--a-color);
+    transition: all 0.5s;
+}
+
+.galaxy-controller-button:hover:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 130px;
+    width: 3px;
+    background-color: var(--aa-color);
+}
+
+.galaxy-controller-button:active {
+    background-color: var(--aa-color);
+}
+
+.galaxy-controller-separator {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1px;
+    width: 75px;
+    background-color: var(--a-color);
+}
+
+#display-galaxy-button {
+    appearance: none;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: var(--orange-highlight-50);
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    pointer-events: all;
+}
+
+#content {
+    transition: opacity 1s ease;
+}
+
+#display-galaxy-button:hover {
+    background-color: var(--orange-highlight-50);
+    color: var(--blue-900);
+}
+
+.clickable{
+    cursor: pointer;
 }

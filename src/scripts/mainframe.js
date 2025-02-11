@@ -63,5 +63,39 @@ titleCrossButton.addEventListener("click", (e) => {
     }, 2000)
 })
 
+let galaxyControlsDisplayed = false;
+
+const galaxyDisplay = document.getElementById("display-galaxy-button");
+galaxyDisplay.addEventListener("click", (e) => {
+    galaxyControlsDisplayed = !galaxyControlsDisplayed;
+    const contentWrapper = document.getElementById("content");
+    const galaxyWrapper = document.getElementById("galaxy-controller");
+    const backgroundWrapper = document.getElementById("background");
+
+    if(galaxyControlsDisplayed){
+        contentWrapper.classList.remove("opaque");
+        contentWrapper.classList.add("overlay-no-pointer-events");
+        contentWrapper.classList.add("transparent");
+
+        backgroundWrapper.classList.remove("opaque");
+        backgroundWrapper.classList.add("transparent");
+
+        galaxyWrapper.classList.remove("transparent");
+        galaxyWrapper.classList.add("opaque");
+    }
+    else{
+        contentWrapper.classList.remove("transparent");
+        contentWrapper.classList.remove("overlay-no-pointer-events");
+        contentWrapper.classList.add("opaque");
+
+        backgroundWrapper.classList.remove("transparent");
+        backgroundWrapper.classList.add("opaque");
+
+        galaxyWrapper.classList.remove("opaque");
+        galaxyWrapper.classList.add("transparent");
+    }
+
+});
+
 window.onresize = () => calculateSize();
 calculateSize();

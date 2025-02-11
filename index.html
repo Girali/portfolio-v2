@@ -13,11 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Victor+Mono:wght@100..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="container-galaxy"></div>
+    <div id="display-galaxy-button" class="victor-mono-light transparent clickable">
+        <span>[ GALAXY ]</span>
+        <span>[ CONTROLS ]</span>
+    </div>
+    <div id="galaxy-controller" class="transparent">
+        <input type="radio" name="galaxy" id="set-default-btn" class="galaxy-controller-button clickable" value="default">
+        <div class="galaxy-controller-separator"></div>
+        <input type="radio" name="galaxy" id="set-tech-btn" class="galaxy-controller-button clickable" value="tech">
+        <div class="galaxy-controller-separator"></div>
+        <input type="radio" name="galaxy" id="set-art-btn" class="galaxy-controller-button clickable" value="art">
+        <div class="galaxy-controller-separator"></div>
+        <input type="radio" name="galaxy" id="set-ui-btn" class="galaxy-controller-button clickable" value="ui">
+    </div>
     <div id="background">
-        <div id="container-galaxy"></div>
         <script type="module" src="src/galaxy/galaxy.js"></script>
-        <div id="background-blur" style="display: none"></div>
-        <div id="background-mask" ></div>
+        <div id="background-mask"></div>
         <div id="tiles"></div>
         <p id="start-text" class="victor-mono-light opaque">[ PRESS TO START ]</p>
     </div>
@@ -48,7 +60,7 @@
                 <img src="src/cross_left.png" id="cross-left" class="overlay-no-pointer-events"/>
                 <img src="src/cross_right.png" id="cross-right" class="overlay-no-pointer-events"/>
                 <div id="cross-button">
-                    <div id="cross-button-text" class="victor-mono-thin">CONNECT</div>
+                    <div id="cross-button-text" class="victor-mono-thin clickable">CONNECT</div>
                 </div>
             </div>
         </div>
@@ -56,12 +68,53 @@
             <div id="portfolio-zone">
                 <div id="portfolio-zone-tech" class="portfolio-zone">
                     <div class="active disabled">
-
+                        <div class="portfolio-detailed-content">
+                            <div class="portfolio-detailed-content-title-column">
+                                <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">TECH</div>
+                                <div class="portfolio-text victor-mono-light">As a developer I know well languages like <ha>C#, C++, Python, JavaScript</ha>.</div>
+                                <div class="portfolio-text victor-mono-light">I’m really familiar with <ha>Unity</ha> and <ha>Unreal Engine</ha>. This also means I familiar with development of various features concerning <ha>audio, art & gameplay</ha>.</div>
+                                <div class="portfolio-text victor-mono-light">I have skills in various domain like <ha>networking</ha>, automation on <ha>Blender</ha> or <ha>Maya</ha>.</div>
+                            </div>
+                            <div class="portfolio-detailed-content-box-column">
+                                <img src="src/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <div class="portfolio-sub-title germania-one-regular">3D ENGINES</div>
+                                <div class="portfolio-text victor-mono-light">As a Software Engineer at <aa>Virtuos Games</aa>, I worked on several different “in house” game engines, in <ha>C++</ha> and <ha>C#</ha>.</div>
+                                <div class="portfolio-text victor-mono-light">My work was mainly focused on <ha>tooling</ha>, <ha>engine features</ha> and <ha>integration</ha>.</div>
+                                <div class="portfolio-text victor-mono-light">Also worked with graphic API like <ha>TREE JS</ha></div>
+                                <img src="src/img/three-js.gif" class="portfolio-thumbnail-img">
+                            </div>
+                            <div class="portfolio-detailed-content-box-column">
+                                <img src="src/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <div class="portfolio-sub-title germania-one-regular">NETWORKING</div>
+                                <div class="portfolio-text victor-mono-light">I acquired <ha>experience</ha> on networking through development of a <ha>Online FPS</ha> game.</div>
+                                <a href="https://store.steampowered.com/app/1662270/Vandalhalla/" target="_blank" class="portfolio-cover-img"><img src="src/img/vandalhalla.jpg"></a>
+                                <div class="portfolio-cover-img-title victor-mono-light"><aa>VANDALHALLA</aa> (ON STEAM)</div>
+                                <div class="portfolio-text victor-mono-light">I also created a course about networking in Unity, specifically on the <ha>Photon Bolt networking</ha> engine.</div>
+                            </div>
+                            <div class="portfolio-detailed-content-box-column">
+                                <img src="src/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <div class="portfolio-sub-title germania-one-regular">GAME DEV</div>
+                                <div class="portfolio-text victor-mono-light">As a passionate video game developer, I have made <aa>+15 game projects</aa> over the years. Working with <ha>Unity, Unreal Engine, Godot</ha> and others.</div>
+                                <a href="https://www.youtube.com/watch?v=iEd_u28oYoo" target="_blank" class="portfolio-promo-img" style="margin-left: 0">
+                                    <div class="portfolio-promo-img-title victor-mono-light">DATUM</div>
+                                    <img src="src/img/datum.png">
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=J6m3OEs78fk" target="_blank" class="portfolio-promo-img" style="margin-left: 20px">
+                                    <div class="portfolio-promo-img-title victor-mono-light">LE FRENCH BACKERY</div>
+                                    <img src="src/img/le-french-bakery.png">
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=cpQtZKMo88g" target="_blank" class="portfolio-promo-img" style="margin-left: 40px">
+                                    <div class="portfolio-promo-img-title victor-mono-light">VANDALHALLA</div>
+                                    <img src="src/img/vandalhalla-promo.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-close-button clickable"></div>
                     </div>
                     <div class="preview enabled">
                         <div class="portfolio-card-upper-part">
                             <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">TECH</div>
-                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview">Learn more</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview clickable">Learn more</div>
                         </div>
                         <div class="portfolio-card-lower-part">
                             <div class="portfolio-img portfolio-img-card">
@@ -80,19 +133,20 @@
                     </div>
                     <div class="collapsed disabled">
                         <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">TECH</div>
-                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed">Learn more</div>
+                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Learn more</div>
                     </div>
-                    <img src="src/tech-corner.png" id="portfolio-tech-corner-left">
-                    <img src="src/tech-corner.png" id="portfolio-tech-corner-right">
+                    <img src="src/tech-corner.png" id="portfolio-tech-corner-left" class="overlay-no-pointer-events">
+                    <img src="src/tech-corner.png" id="portfolio-tech-corner-right" class="overlay-no-pointer-events">
                 </div>
                 <div id="portfolio-zone-art" class="portfolio-zone">
                     <div class="active disabled">
-
+                        <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">ART</div>
+                        <div class="portfolio-close-button clickable"></div>
                     </div>
                     <div class="preview enabled">
                         <div class="portfolio-card-upper-part">
                             <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">ART</div>
-                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview">Read more</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview clickable">Read more</div>
                         </div>
                         <div class="portfolio-card-lower-part">
                             <div class="portfolio-img portfolio-img-card">
@@ -111,18 +165,19 @@
                     </div>
                     <div class="collapsed disabled">
                         <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">ART</div>
-                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed">Read more</div>
+                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Read more</div>
                     </div>
-                    <img src="src/art-corner.png" id="portfolio-art-corner">
+                    <img src="src/art-corner.png" id="portfolio-art-corner" class="overlay-no-pointer-events">
                 </div>
                 <div id="portfolio-zone-ui" class="portfolio-zone">
                     <div class="active disabled">
-
+                        <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">UI-UX</div>
+                        <div class="portfolio-close-button clickable"></div>
                     </div>
                     <div class="preview enabled">
                         <div class="portfolio-card-upper-part">
                             <div class="portfolio-zone-title germania-one-regular portfolio-title-preview">UI-UX</div>
-                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview">See more</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview clickable">See more</div>
                         </div>
                         <div class="portfolio-card-lower-part">
                             <div class="portfolio-img portfolio-img-card">
@@ -131,20 +186,20 @@
                             </div>
                             <div class="portfolio-img portfolio-img-card">
                                 <img src="src/dummy.png"/>
-                                <p class="portfolio-img-card-title germania-one-regular">branding</p>
+                                <p class="portfolio-img-card-title germania-one-regular">software</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
                                 <img src="src/dummy.png"/>
-                                <p class="portfolio-img-card-title germania-one-regular">game ui & ux</p>
+                                <p class="portfolio-img-card-title germania-one-regular">games</p>
                             </div>
                         </div>
                     </div>
                     <div class="collapsed disabled">
                         <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">UI-UX</div>
-                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed">See more</div>
+                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">See more</div>
                     </div>
-                    <img src="src/ui-corner.png" id="portfolio-ui-corner-left">
-                    <img src="src/ui-corner.png" id="portfolio-ui-corner-right">
+                    <img src="src/ui-corner.png" id="portfolio-ui-corner-left" class="overlay-no-pointer-events">
+                    <img src="src/ui-corner.png" id="portfolio-ui-corner-right" class="overlay-no-pointer-events">
                 </div>
             </div>
             <script src="src/scripts/portfolio-card.js"></script>

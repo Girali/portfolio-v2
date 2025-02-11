@@ -52,9 +52,6 @@ const handleOnClickTitle = index => {
             loop: true,
         })
 
-        document.getElementById("background-mask").classList.add("background-animated");
-        document.getElementById("background-blur").classList.add("background-blur-animated");
-
         const titleWrapper = document.getElementById("title");
 
         titleWrapper.classList.remove("transparent");
@@ -73,6 +70,11 @@ const handleOnClickTitle = index => {
 
         const backgroundWrapper = document.getElementById("background");
         backgroundWrapper.classList.add("overlay-no-pointer-events");
+
+        const galaxyDisplayWrapper = document.getElementById("display-galaxy-button");
+
+        galaxyDisplayWrapper.classList.remove("transparent");
+        galaxyDisplayWrapper.classList.add("opaque");
 
         window.InitGalaxy();
     }

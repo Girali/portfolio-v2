@@ -31,12 +31,12 @@ const SetupZoneButtons = (zoneName) => {
         })
     })
 
-    //const activeButton = activeWrapper[0].getElementsByClassName("portfolio-close-button")[0]
-    //activeButton.addEventListener("click", (e) => {
-    //    portfolioZones.forEach(zone => {
-    //        PreviewAllZone(zone);
-    //    })
-    //})
+    const activeButton = activeWrapper[0].getElementsByClassName("portfolio-close-button")[0]
+    activeButton.addEventListener("click", (e) => {
+       portfolioZones.forEach(zone => {
+           PreviewAllZone(zone);
+       })
+    })
 }
 
 const ActiveZone = (zoneName) => {

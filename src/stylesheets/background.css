@@ -63,6 +63,7 @@ body{
     border-bottom-width: 0px;
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
+    cursor: pointer;
 }
 
 .tile::after{
@@ -126,7 +127,7 @@ body{
     /*background-color: #000210;*/
     background:
     linear-gradient(to bottom right, rgba(0, 8, 18, 0.98) 0%, rgba(0, 22, 48, 0.98) 100%);
-    opacity: 0;
+    opacity: 0.8;
 }
 
 .background-animated{
@@ -146,7 +147,7 @@ body{
     }
 
     50% {
-        opacity: 0.9;
+        opacity: 0.7;
     }
 
     100% {
@@ -208,4 +209,8 @@ body{
     color: var(--orange-a1);
     transition: opacity 1s;
     animation: start-text-loop 3s ease-in-out infinite;
+}
+
+#background{
+    transition: opacity 1s ease;
 }

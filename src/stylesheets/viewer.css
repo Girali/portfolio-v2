@@ -1,0 +1,59 @@
+﻿#portfolio-image-viewer{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-900-80);
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.5s ease;
+
+    --accent-color: var(--orange-highlight);
+    --accent-color-50: var(--orange-highlight-50);
+    --accent-color-10: var(--orange-highlight-10);
+}
+
+#img-viewer{
+    height: 90vh;
+    border-radius: 20px;
+}
+
+#img-viewer-container{
+    position: relative;
+}
+
+#img-viewer-left-corner{
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+#img-viewer-right-corner{
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+}
+
+#img-viewer-quit-btn{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+}
+
+.viewer{
+    cursor: pointer;
+}
+
+#notify-controller{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px var(--orange-highlight) solid;
+    opacity: 0;
+}

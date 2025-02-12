@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="src/stylesheets/background.css"/>
     <link rel="stylesheet" type="text/css" href="src/stylesheets/mainframe.css"/>
     <link rel="stylesheet" type="text/css" href="src/stylesheets/portfolio.css"/>
+    <link rel="stylesheet" type="text/css" href="src/stylesheets/viewer.css"/>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -15,6 +16,7 @@
 <body>
     <div id="container-galaxy"></div>
     <div id="display-galaxy-button" class="victor-mono-light transparent clickable">
+        <div id="notify-controller"></div>
         <span>[ GALAXY ]</span>
         <span>[ CONTROLS ]</span>
     </div>
@@ -41,8 +43,8 @@
                     <div id="last-name">MARKOWSKI</div>
                     <div id="first-name">oskar</div>
                 </div>
-                <img src="src/corner-1.png" id="corner-1" class="overlay-no-pointer-events">
-                <img src="src/corner-2.png" id="corner-2" class="overlay-no-pointer-events">
+                <img src="src/img/fui/corner-1.png" id="corner-1" class="overlay-no-pointer-events">
+                <img src="src/img/fui/corner-2.png" id="corner-2" class="overlay-no-pointer-events">
             </div>
             <div id="title-resume">
                 <p class="title-resume-text victor-mono-light">I’m MARKOWSKI Oskar a Developer with a <hl-txt>Professional License Diploma in Computer Science</hl-txt>, specialized in project management and with a <hl-txt>Master degree in Art</hl-txt>.</p>
@@ -50,15 +52,15 @@
                 <p class="title-resume-text victor-mono-light">And to close this presentation I do like to share a quote from Kamina:</p>
                 <p class="title-resume-quote victor-mono-regular">"Never believe in yourself. Neither believe in someone else. Believe in you who believe in yourself"</p>
                 <p class="title-resume-text victor-mono-light">It means that no matter what, always aim towards the best of what you can be.</p>
-                <img src="src/corner-3.png" id="corner-3" class="overlay-no-pointer-events">
+                <img src="src/img/fui/corner-3.png" id="corner-3" class="overlay-no-pointer-events">
             </div>
-            <img src="src/dashed_bar.png" id="dashed-bar-left" class="overlay-no-pointer-events"/>
-            <img src="src/dashed_bar.png" id="dashed-bar-right" class="overlay-no-pointer-events"/>
+            <img src="src/img/fui/dashed_bar.png" id="dashed-bar-left" class="overlay-no-pointer-events"/>
+            <img src="src/img/fui/dashed_bar.png" id="dashed-bar-right" class="overlay-no-pointer-events"/>
         </div>
         <div id="portfolio-button" class="transparent">
             <div id="portfolio-cross">
-                <img src="src/cross_left.png" id="cross-left" class="overlay-no-pointer-events"/>
-                <img src="src/cross_right.png" id="cross-right" class="overlay-no-pointer-events"/>
+                <img src="src/img/fui/cross_left.png" id="cross-left" class="overlay-no-pointer-events"/>
+                <img src="src/img/fui/cross_right.png" id="cross-right" class="overlay-no-pointer-events"/>
                 <div id="cross-button">
                     <div id="cross-button-text" class="victor-mono-thin clickable">CONNECT</div>
                 </div>
@@ -76,15 +78,15 @@
                                 <div class="portfolio-text victor-mono-light">I have skills in various domain like <ha>networking</ha>, automation on <ha>Blender</ha> or <ha>Maya</ha>.</div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">3D ENGINES</div>
                                 <div class="portfolio-text victor-mono-light">As a Software Engineer at <aa>Virtuos Games</aa>, I worked on several different “in house” game engines, in <ha>C++</ha> and <ha>C#</ha>.</div>
                                 <div class="portfolio-text victor-mono-light">My work was mainly focused on <ha>tooling</ha>, <ha>engine features</ha> and <ha>integration</ha>.</div>
                                 <div class="portfolio-text victor-mono-light">Also worked with graphic API like <ha>TREE JS</ha></div>
-                                <div class="portfolio-thumbnail-img"><img src="src/img/three-js.gif"></div>
+                                <div class="portfolio-thumbnail-img viewer" toView="src/img/three-js.gif"><img src="src/img/three-js.gif"></div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">NETWORKING</div>
                                 <div class="portfolio-text victor-mono-light">I acquired <ha>experience</ha> on networking through development of a <ha>Online FPS</ha> game.</div>
                                 <a href="https://store.steampowered.com/app/1662270/Vandalhalla/" target="_blank" class="portfolio-cover-img"><img src="src/img/vandalhalla.jpg"></a>
@@ -92,7 +94,7 @@
                                 <div class="portfolio-text victor-mono-light">I also created a course about networking in Unity, specifically on the <ha>Photon Bolt networking</ha> engine.</div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">GAME DEV</div>
                                 <div class="portfolio-text victor-mono-light">As a passionate video game developer, I have made <aa>+15 game projects</aa> over the years. Working with <ha>Unity, Unreal Engine, Godot</ha> and others.</div>
                                 <a href="https://www.youtube.com/watch?v=iEd_u28oYoo" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right" style="margin-left: 0">
@@ -120,15 +122,15 @@
                         </div>
                         <div class="portfolio-card-lower-part">
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/preview/engine.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">3D ENGINES</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/preview/networking.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">NETWORKING</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/le-french-bakery.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">GAME DEV</p>
                             </div>
                         </div>
@@ -137,8 +139,8 @@
                         <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">TECH</div>
                         <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Learn more</div>
                     </div>
-                    <img src="src/tech-corner.png" id="portfolio-tech-corner-left" class="overlay-no-pointer-events">
-                    <img src="src/tech-corner.png" id="portfolio-tech-corner-right" class="overlay-no-pointer-events">
+                    <img src="src/img/fui/tech-corner.png" id="portfolio-tech-corner-left" class="overlay-no-pointer-events">
+                    <img src="src/img/fui/tech-corner.png" id="portfolio-tech-corner-right" class="overlay-no-pointer-events">
                 </div>
                 <div id="portfolio-zone-art" class="portfolio-zone">
                     <div class="active disabled">
@@ -150,42 +152,48 @@
                                 <div class="portfolio-text victor-mono-light">I have a <ha>wide range</ha> of art skills, that are featured in all my projects, which make me <ha>autonomous</ha> and <ha>versatile</ha></div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-art.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-art.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">SHADERS</div>
                                 <div class="portfolio-text victor-mono-light">As a Technical Artist at <aa>Virtuos Games</aa>, I worked on several different domains and <ha>mastered</ha> production <ha>workflows</ha>.</div>
                                 <div class="portfolio-text victor-mono-light">My work with shaders was centered around engines like <ha>Unity</ha> and <ha>Unreal Engine</ha>.</div>
-                                <div class="portfolio-promo-img-top portfolio-promo-img portfolio-promo-img-h-xxl portfolio-promo-img-hover-top"><img src="src/img/shader.gif"></div>
+                                <div class="portfolio-promo-img-top portfolio-promo-img portfolio-promo-img-h-xxl portfolio-promo-img-hover-top viewer" toView="src/img/shader.gif">
+                                    <img src="src/img/shader.gif">
+                                </div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-art.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-art.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">3D ART</div>
                                 <div class="portfolio-text victor-mono-light">My 3D skills are wide ranged. I’m proficient in <ha>rigging</ha>, <ha>texturing</ha>, <ha>modeling</ha> and <ha>animating</ha>.</div>
                                 <div class="portfolio-text victor-mono-light"><ha>Blender</ha> is my preferred software to create 3D content, in any art style.</div>
                                 <div class="portfolio-detailed-content-row-layout">
-                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom">
+                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom viewer" toView="src/img/realistic-fullsize.jpg">
                                         <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-left victor-mono-light">REALISTIC</div>
                                         <img src="src/img/realistic.png">
                                     </div>
                                     <div style="width: 20px"></div>
-                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom">
+                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom" id="viewer-notify-controller">
                                         <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-center victor-mono-light">ABSTRACT</div>
                                         <img src="src/img/abstract.png">
                                     </div>
                                     <div style="width: 20px"></div>
-                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom">
+                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom viewer" toView="src/img/stylised.webp">
                                         <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-right victor-mono-light">STYLISED</div>
                                         <img src="src/img/stylised.webp">
                                     </div>
                                 </div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-art.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-art.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">2D ART</div>
                                 <div class="portfolio-text victor-mono-light">2D skills are centered around software like <ha>Illustrator</ha>, <ha>Photoshop</ha> and <ha>Figma</ha>. I focus mainly on <ha>interfaces</ha>, textures and <ha>drawings</ha>.</div>
                                 <div class="portfolio-detailed-content-row-layout">
-                                    <div class="portfolio-promo-img-top portfolio-promo-img portfolio-promo-img-v-l portfolio-promo-img-hover-top"><img src="src/img/moodboard.png"></div>
+                                    <div class="portfolio-promo-img-top portfolio-promo-img portfolio-promo-img-v-l portfolio-promo-img-hover-top viewer" toView="src/img/moodboard.png">
+                                        <img src="src/img/moodboard.png">
+                                    </div>
                                     <div style="width: 20px"></div>
-                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-l portfolio-promo-img-hover-bottom"><img src="src/img/landscape.png"></div>
+                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-l portfolio-promo-img-hover-bottom viewer" toView="src/img/landscape.png">
+                                        <img src="src/img/landscape.png">
+                                    </div>
                                 </div>
                                 <div class="portfolio-text victor-mono-light">This knowledge give me tha ability to create <ha>visual prototypes</ha> and <ha>style guides</ha>.</div>
                             </div>
@@ -199,15 +207,15 @@
                         </div>
                         <div class="portfolio-card-lower-part">
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/preview/shader.jpg"/>
                                 <p class="portfolio-img-card-title germania-one-regular">shaders</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/realistic.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">3d art</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/landscape.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">2d art</p>
                             </div>
                         </div>
@@ -216,7 +224,7 @@
                         <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">ART</div>
                         <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Read more</div>
                     </div>
-                    <img src="src/art-corner.png" id="portfolio-art-corner" class="overlay-no-pointer-events">
+                    <img src="src/img/fui/art-corner.png" id="portfolio-art-corner" class="overlay-no-pointer-events">
                 </div>
                 <div id="portfolio-zone-ui" class="portfolio-zone">
                     <div class="active disabled">
@@ -229,7 +237,7 @@
                                 <div class="portfolio-text victor-mono-light">Which give me the advantage to create <ha>realistic UI and UX designs</ha>.</div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-ui.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-ui.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">TOOLS & TOOLING</div>
                                 <div class="portfolio-text victor-mono-light">My UI/UX skills has elevated to <ha>professional levels</ha>.</div>
                                 <div class="portfolio-text victor-mono-light">I had the chance to create tools and tooling for <ha>released</ha> and <ha>incoming games</ha>.</div>
@@ -237,22 +245,30 @@
                                 <div class="portfolio-text victor-mono-light">With my knowledge of UX, tools created with frameworks only made for prototyping like <ha>ImGUI</ha> were <ha>praised for intuitiveness</ha>.</div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-ui.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-ui.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">SOFTWARE</div>
                                 <div class="portfolio-text victor-mono-light">I had the chance to work on internal software at <aa>Virtuos Games</aa>, where I created <ha>style guides</ha> and <ha>mockups</ha>.</div>
-                                <div class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-xl portfolio-promo-img-hover-right"><img src="src/img/mockup.webp"></div>
+                                <div class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-xl portfolio-promo-img-hover-right viewer" toView="src/img/mockup.webp">
+                                    <img src="src/img/mockup.webp">
+                                </div>
                                 <div style="height: 10px"></div>
-                                <div class="portfolio-promo-img-left portfolio-promo-img portfolio-promo-img-h-xl portfolio-promo-img-hover-left"><img src="src/img/style-guide.png"></div>
+                                <div class="portfolio-promo-img-left portfolio-promo-img portfolio-promo-img-h-xl portfolio-promo-img-hover-left viewer" toView="src/img/style-guide.png">
+                                    <img src="src/img/style-guide.png">
+                                </div>
                             </div>
                             <div class="portfolio-detailed-content-box-column">
-                                <img src="src/corner-inner-ui.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
+                                <img src="src/img/fui/corner-inner-ui.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                 <div class="portfolio-sub-title germania-one-regular">GAMES</div>
                                 <div class="portfolio-text victor-mono-light">On several instances I had the chance to <ha>integrate</ha> and <ha>create</ha> UI <ha>AAA games</ha> projects.</div>
                                 <div class="portfolio-text victor-mono-light">In my free time I like to work on <ha>redesigning</ha> and <ha>improving UI</ha> for games that I made or played.</div>
                                 <div class="portfolio-detailed-content-row-layout">
-                                    <div class="portfolio-promo-img-top portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-top"><img src="src/img/vandalhalla-rework-1.png"></div>
+                                    <div class="portfolio-promo-img-top portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-top viewer" toView="src/img/vandalhalla-rework-1.png">
+                                        <img src="src/img/vandalhalla-rework-1.png">
+                                    </div>
                                     <div style="width: 20px"></div>
-                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom"><img src="src/img/vandalhalla-rework-2.png"></div>
+                                    <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom viewer" toView="src/img/vandalhalla-rework-2.png">
+                                        <img src="src/img/vandalhalla-rework-2.png">
+                                    </div>
                                 </div>
                                 <div style="height: 10px"></div>
                             </div>
@@ -266,15 +282,15 @@
                         </div>
                         <div class="portfolio-card-lower-part">
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/preview/tooling.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">tools & tooling</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/style-guide.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">software</p>
                             </div>
                             <div class="portfolio-img portfolio-img-card">
-                                <img src="src/dummy.png"/>
+                                <img src="src/img/vandalhalla-rework-1.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">games</p>
                             </div>
                         </div>
@@ -283,13 +299,22 @@
                         <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">UI-UX</div>
                         <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">See more</div>
                     </div>
-                    <img src="src/ui-corner.png" id="portfolio-ui-corner-left" class="overlay-no-pointer-events">
-                    <img src="src/ui-corner.png" id="portfolio-ui-corner-right" class="overlay-no-pointer-events">
+                    <img src="src/img/fui/ui-corner.png" id="portfolio-ui-corner-left" class="overlay-no-pointer-events">
+                    <img src="src/img/fui/ui-corner.png" id="portfolio-ui-corner-right" class="overlay-no-pointer-events">
                 </div>
             </div>
             <script src="src/scripts/portfolio-card.js"></script>
         </div>
     </div>
+    <div id="portfolio-image-viewer" class="transparent overlay-no-pointer-events">
+        <div id="img-viewer-container">
+            <img id="img-viewer" src="src/img/realistic.png">
+            <img id="img-viewer-left-corner" src="src/img/fui/corner-4.png"/>
+            <img id="img-viewer-right-corner" src="src/img/fui/corner-3.png"/>
+        </div>
+        <div id="img-viewer-quit-btn" class="portfolio-close-button clickable"></div>
+        </div>
     <script src="src/scripts/mainframe.js"></script>
+    <script src="src/scripts/viewer.js"></script>
 </body>
 </html>

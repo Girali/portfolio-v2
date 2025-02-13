@@ -19,6 +19,7 @@
 #img-viewer{
     height: 90vh;
     border-radius: 20px;
+    object-fit: contain;
 }
 
 #img-viewer-container{
@@ -56,4 +57,10 @@
     border-radius: 10px;
     border: 3px var(--orange-highlight) solid;
     opacity: 0;
+}
+
+@media (max-width: 1250px) {
+    #img-viewer {
+        width: 90vw;
+    }
 }

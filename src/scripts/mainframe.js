@@ -97,5 +97,13 @@ galaxyDisplay.addEventListener("click", (e) => {
 
 });
 
-window.onresize = () => calculateSize();
-calculateSize();
+function onResize() {
+    window.CreateGrid();
+    window.ResizeThreeJSCanvas();
+    calculateSize();
+}
+
+window.onresize = () => onResize();
+window.addEventListener("DOMContentLoaded", () => {
+    onResize();
+})

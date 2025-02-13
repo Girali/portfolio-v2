@@ -144,26 +144,6 @@ hl-txt{
     align-items: flex-end;
 }
 
-@media (max-width: 1250px) {
-    #last-name {
-        font-size: 8rem;
-        line-height: 5.6rem;
-    }
-
-    #fist-name {
-        font-size: 3rem;
-        line-height: 2.1rem;
-    }
-
-    #corner-1{
-        width: 100%;
-    }
-
-    #corner-2{
-        width: 10%;
-    }
-}
-
 #dashed-bar-left{
     position: absolute;
     left: 15px;
@@ -383,4 +363,65 @@ hl-txt{
 
 .clickable{
     cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    #title{
+        margin-bottom: 5px;
+    }
+
+    #last-name {
+        font-size: 8rem;
+        line-height: 5.6rem;
+    }
+
+    #fist-name {
+        font-size: 3rem;
+        line-height: 2.1rem;
+    }
+
+    #corner-1{
+        width: 100%;
+    }
+
+    #corner-2{
+        width: 10%;
+    }
+
+    #portfolio-button{
+        bottom: 25vh;
+    }
+
+    #cross-left{
+        bottom: 100px;
+        left: -5px;
+        transform: scale(200%) translate(-100%, 0%);
+    }
+
+    #cross-right{
+        bottom: 220px;
+        left: 5px;
+        transform: scale(200%);
+    }
+
+    #cross-button{
+        font-size: 3rem;
+        bottom: 200px;
+        left: -50px;
+        height: 70px;
+        width: 300px;
+    }
+
+    #cross-button::after{
+        height: 70px;
+        width: 10px;
+    }
+
+    #dashed-bar-left{
+        display: none;
+    }
+
+    #dashed-bar-right{
+        display: none;
+    }
 }

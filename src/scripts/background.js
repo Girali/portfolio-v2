@@ -97,19 +97,21 @@ const createTiles = quantity => {
 }
 
 const createGrid = () => {
-    tileWrapper.innerHTML = '';
+    if(opened === false) {
+        tileWrapper.innerHTML = '';
 
-    screenWidth = window.innerWidth;
-    screenHeight = window.innerHeight;
-    sizeYTile = document.body.clientHeight
+        screenWidth = window.innerWidth;
+        screenHeight = window.innerHeight;
+        sizeYTile = document.body.clientHeight
 
-    columns = Math.floor(document.body.clientWidth / sizeXTile);
-    rows = Math.floor(document.body.clientHeight / sizeYTile);
+        columns = Math.floor(document.body.clientWidth / sizeXTile);
+        rows = Math.floor(document.body.clientHeight / sizeYTile);
 
-    tileWrapper.style.setProperty('--columns', columns);
-    tileWrapper.style.setProperty('--rows', rows);
+        tileWrapper.style.setProperty('--columns', columns);
+        tileWrapper.style.setProperty('--rows', rows);
 
-    createTiles(columns * rows);
+        createTiles(columns * rows);
+    }
 }
 
 const createSparks = () => {
@@ -118,5 +120,4 @@ const createSparks = () => {
     }
 }
 
-window.onresize = () => createGrid();
-createGrid();
+window.CreateGrid = () => createGrid();

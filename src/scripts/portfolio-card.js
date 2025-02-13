@@ -4,6 +4,21 @@
     "portfolio-zone-ui"
 ]
 
+const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const portfolioZoneWrapper = document.getElementById('portfolio-zone');
+
+const SwapCardOrder = (zoneName) => {
+    const zoneWrapper = document.getElementById(zoneName);
+    portfolioZoneWrapper.insertBefore(zoneWrapper, portfolioZoneWrapper.firstChild);
+}
+
+const RestoreCardOrder = () => {
+    portfolioZones.forEach((zoneName) => {
+        const zoneWrapper = document.getElementById(zoneName);
+        portfolioZoneWrapper.appendChild(zoneWrapper);
+    })
+}
+
 const SetupZoneButtons = (zoneName) => {
     const zoneWrapper = document.getElementById(zoneName);
 
@@ -70,6 +85,10 @@ const ActiveZone = (zoneName) => {
 
     collapsedWrapper[0].classList.remove("enabled");
     collapsedWrapper[0].classList.add("disabled");
+
+    if(isMobile) {
+        SwapCardOrder(zoneName);
+    }
 }
 
 const CollapseZone = (zoneName) => {
@@ -116,8 +135,13 @@ const PreviewAllZone = () => {
         collapsedWrapper[0].classList.remove("enabled");
         collapsedWrapper[0].classList.add("disabled");
     })
+
+    if(isMobile){
+        RestoreCardOrder();
+    }
 }
 
 portfolioZones.forEach(zoneName => {
     SetupZoneButtons(zoneName);
 })
+

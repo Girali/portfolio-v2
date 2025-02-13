@@ -54,6 +54,10 @@ const ActiveZone = (zoneName) => {
 
     const zoneWrapper = document.getElementById(zoneName);
 
+    zoneWrapper.classList.remove("preview-size");
+    zoneWrapper.classList.add("active-size");
+    zoneWrapper.classList.remove("collapsed-size");
+
     const previewWrapper = zoneWrapper.getElementsByClassName("preview")
     const activeWrapper = zoneWrapper.getElementsByClassName("active")
     const collapsedWrapper = zoneWrapper.getElementsByClassName("collapsed")
@@ -70,6 +74,10 @@ const ActiveZone = (zoneName) => {
 
 const CollapseZone = (zoneName) => {
     const zoneWrapper = document.getElementById(zoneName);
+
+    zoneWrapper.classList.remove("preview-size");
+    zoneWrapper.classList.remove("active-size");
+    zoneWrapper.classList.add("collapsed-size");
 
     const previewWrapper = zoneWrapper.getElementsByClassName("preview")
     const activeWrapper = zoneWrapper.getElementsByClassName("active")
@@ -90,6 +98,10 @@ const PreviewAllZone = () => {
 
     portfolioZones.forEach(zoneName => {
         const zoneWrapper = document.getElementById(zoneName);
+
+        zoneWrapper.classList.add("preview-size");
+        zoneWrapper.classList.remove("active-size");
+        zoneWrapper.classList.remove("collapsed-size");
 
         const previewWrapper = zoneWrapper.getElementsByClassName("preview")
         const activeWrapper = zoneWrapper.getElementsByClassName("active")

@@ -692,6 +692,11 @@ aa{
     display: flex;
 }
 
+.portfolio-detailed-row{
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 1250px) {
     .portfolio-zone-content {
         transition: opacity 0s ease, transform 0s ease;
@@ -702,11 +707,6 @@ aa{
 
     .portfolio-detailed-content{
         flex-direction: column;
-    }
-
-    .portfolio-detailed-row{
-        display: flex;
-        flex-direction: row;
     }
 
     .mobile-spacer-horizontal-margin{

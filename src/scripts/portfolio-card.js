@@ -26,6 +26,8 @@ const SetupZoneButtons = (zoneName) => {
     const activeWrapper = zoneWrapper.getElementsByClassName("active")
     const collapsedWrapper = zoneWrapper.getElementsByClassName("collapsed")
 
+    previewWrapper[0].getElementsByClassName("")
+
     const buttonPreview = previewWrapper[0].getElementsByClassName("portfolio-zone-button")[0]
     buttonPreview.addEventListener("click", (e) => {
         ActiveZone(zoneName);
@@ -36,7 +38,19 @@ const SetupZoneButtons = (zoneName) => {
         })
     })
 
-    const buttonCollapsed = collapsedWrapper[0].getElementsByClassName("portfolio-zone-button")[0]
+    const portfolioCards = previewWrapper[0].getElementsByClassName("portfolio-img-card")
+    for (let portfolioCard of portfolioCards) {
+        portfolioCard.addEventListener("click", (e) => {
+            ActiveZone(zoneName);
+            portfolioZones.forEach(zone => {
+                if(zoneName !== zone){
+                    CollapseZone(zone);
+                }
+            })
+        })
+    }
+
+    const buttonCollapsed = collapsedWrapper[0]
     buttonCollapsed.addEventListener("click", (e) => {
         ActiveZone(zoneName);
         portfolioZones.forEach(zone => {

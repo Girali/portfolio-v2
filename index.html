@@ -15,11 +15,6 @@
 </head>
 <body>
     <div id="container-galaxy"></div>
-    <div id="display-galaxy-button" class="victor-mono-light transparent clickable">
-        <div id="notify-controller"></div>
-        <span>[ GALAXY ]</span>
-        <span>[ CONTROLS ]</span>
-    </div>
     <div id="galaxy-controller" class="transparent">
         <input type="radio" name="galaxy" id="set-default-btn" class="galaxy-controller-button clickable" value="default">
         <div class="galaxy-controller-separator"></div>
@@ -36,10 +31,10 @@
     </div>
     <div id="content">
         <div id="title" class="transparent">
-            <div id="main-title" class="germania-one-regular">
-                <div id="main-title-name-container">
-                    <div id="last-name">MARKOWSKI</div>
-                    <div id="first-name">oskar</div>
+            <div id="main-title" class="germania-one-regular overlay-no-pointer-events">
+                <div id="main-title-name-container" >
+                    <div id="last-name" class="unselectable">MARKOWSKI</div>
+                    <div id="first-name" class="unselectable">oskar</div>
                 </div>
                 <img src="src/img/fui/corner-1.png" id="corner-1" class="overlay-no-pointer-events">
                 <img src="src/img/fui/corner-2.png" id="corner-2" class="overlay-no-pointer-events">
@@ -101,17 +96,17 @@
                                     <img src="src/img/fui/corner-inner-tech.png" class="portfolio-detailed-content-box-img overlay-no-pointer-events">
                                     <div class="portfolio-sub-title germania-one-regular">GAME DEV</div>
                                     <div class="portfolio-text victor-mono-light">As a passionate video game developer, I have made <aa>+15 game projects</aa> over the years. Working with <ha>Unity, Unreal Engine, Godot</ha> and others.</div>
-                                    <a href="https://www.youtube.com/watch?v=iEd_u28oYoo" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right" style="margin-left: 0">
+                                    <a href="https://www.youtube.com/watch?v=iEd_u28oYoo" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right">
                                         <div class="portfolio-promo-img-title victor-mono-light">DATUM</div>
                                         <img src="src/img/datum.png">
                                     </a>
                                     <div style="height: 10px"></div>
-                                    <a href="https://www.youtube.com/watch?v=J6m3OEs78fk" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right" style="margin-left: 20px">
+                                    <a href="https://www.youtube.com/watch?v=J6m3OEs78fk" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right left-margin-20">
                                         <div class="portfolio-promo-img-title victor-mono-light">LE FRENCH BACKERY</div>
                                         <img src="src/img/le-french-bakery.png">
                                     </a>
                                     <div style="height: 10px"></div>
-                                    <a href="https://www.youtube.com/watch?v=cpQtZKMo88g" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right" style="margin-left: 40px">
+                                    <a href="https://www.youtube.com/watch?v=cpQtZKMo88g" target="_blank" class="portfolio-promo-img-right portfolio-promo-img portfolio-promo-img-h-s portfolio-promo-img-hover-right left-margin-40">
                                         <div class="portfolio-promo-img-title victor-mono-light">VANDALHALLA</div>
                                         <img src="src/img/vandalhalla-promo.jpg">
                                     </a>
@@ -126,23 +121,23 @@
                             <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview clickable">Learn more</div>
                         </div>
                         <div class="portfolio-card-lower-part">
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/preview/engine.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">3D ENGINES</p>
                             </div>
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/preview/networking.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">NETWORKING</p>
                             </div>
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/le-french-bakery.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">GAME DEV</p>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-zone-content collapsed disabled">
-                        <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">TECH</div>
-                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Learn more</div>
+                    <div class="portfolio-zone-content collapsed disabled clickable">
+                            <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">TECH</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Learn more</div>
                     </div>
                     <img src="src/img/fui/tech-corner.png" id="portfolio-tech-corner-left" class="overlay-no-pointer-events">
                     <img src="src/img/fui/tech-corner.png" id="portfolio-tech-corner-right" class="overlay-no-pointer-events">
@@ -177,17 +172,17 @@
                                     <div class="portfolio-text victor-mono-light"><ha>Blender</ha> is my preferred software to create 3D content, in any art style.</div>
                                     <div class="portfolio-detailed-content-row-layout">
                                         <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom viewer" toView="src/img/realistic-fullsize.jpg">
-                                            <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-left victor-mono-light">REALISTIC</div>
+                                            <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-left victor-mono-light unselectable">REALISTIC</div>
                                             <img src="src/img/realistic.png">
                                         </div>
                                         <div style="width: 20px"></div>
                                         <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom" id="viewer-notify-controller">
-                                            <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-center victor-mono-light">ABSTRACT</div>
+                                            <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-center victor-mono-light unselectable">ABSTRACT</div>
                                             <img src="src/img/abstract.png">
                                         </div>
                                         <div style="width: 20px"></div>
                                         <div class="portfolio-promo-img-bottom portfolio-promo-img portfolio-promo-img-v-xl portfolio-promo-img-hover-bottom viewer" toView="src/img/stylised.webp">
-                                            <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-right victor-mono-light">STYLISED</div>
+                                            <div class="portfolio-promo-img-title-vertical portfolio-promo-img-title-vertical-right victor-mono-light unselectable">STYLISED</div>
                                             <img src="src/img/stylised.webp">
                                         </div>
                                     </div>
@@ -218,23 +213,23 @@
                             <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview clickable">Read more</div>
                         </div>
                         <div class="portfolio-card-lower-part">
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/preview/shader.jpg"/>
                                 <p class="portfolio-img-card-title germania-one-regular">shaders</p>
                             </div>
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/realistic.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">3d art</p>
                             </div>
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/landscape.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">2d art</p>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-zone-content collapsed disabled">
-                        <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">ART</div>
-                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Read more</div>
+                    <div class="portfolio-zone-content collapsed disabled clickable">
+                            <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">ART</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">Read more</div>
                     </div>
                     <img src="src/img/fui/art-corner.png" id="portfolio-art-corner" class="overlay-no-pointer-events">
                 </div>
@@ -300,23 +295,23 @@
                             <div class="portfolio-zone-button victor-mono-regular portfolio-button-preview clickable">See more</div>
                         </div>
                         <div class="portfolio-card-lower-part">
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/preview/tooling.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">tools & tooling</p>
                             </div>
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/style-guide.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">software</p>
                             </div>
-                            <div class="portfolio-img portfolio-img-card">
+                            <div class="portfolio-img portfolio-img-card clickable">
                                 <img src="src/img/vandalhalla-rework-1.png"/>
                                 <p class="portfolio-img-card-title germania-one-regular">games</p>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-zone-content collapsed disabled">
-                        <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">UI-UX</div>
-                        <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">See more</div>
+                    <div class="portfolio-zone-content collapsed disabled clickable">
+                            <div class="portfolio-zone-title germania-one-regular portfolio-title-collapsed">UI-UX</div>
+                            <div class="portfolio-zone-button victor-mono-regular portfolio-button-collapsed clickable">See more</div>
                     </div>
                     <img src="src/img/fui/ui-corner.png" id="portfolio-ui-corner-left" class="overlay-no-pointer-events">
                     <img src="src/img/fui/ui-corner.png" id="portfolio-ui-corner-right" class="overlay-no-pointer-events">
@@ -331,6 +326,11 @@
             <img id="img-viewer-right-corner" src="src/img/fui/corner-3.png"/>
         </div>
         <div id="img-viewer-quit-btn" class="portfolio-close-button clickable"></div>
+    </div>
+    <div id="display-galaxy-button" class="victor-mono-light transparent clickable">
+        <div id="notify-controller"></div>
+        <span>[ GALAXY ]</span>
+        <span>[ CONTROLS ]</span>
     </div>
     <script type="module" src="src/galaxy/galaxy.js"></script>
     <script type="module" src="src/scripts/background.js"></script>

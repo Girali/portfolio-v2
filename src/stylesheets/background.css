@@ -213,6 +213,13 @@ html, body {
     animation: start-text-loop 3s ease-in-out infinite;
 }
 
+@media (max-width: 1250px) {
+    #start-text {
+        bottom: 20vh;
+        font-size: 2.5rem;
+    }
+}
+
 #background{
     transition: opacity 1s ease;
 }

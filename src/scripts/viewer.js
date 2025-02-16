@@ -27,9 +27,9 @@ function onQuitViewer(){
 function notifyController() {
     anime({
         targets: '#notify-controller',
-        scale: ["80%", "130%"],
-        opacity: [0, 1, 0],
-        duration: 1000,
+        scale: ["80%", "200%"],
+        opacity: [0.5, 1, 0],
+        duration: 500,
         easing: 'easeInQuad',
     });
 }
